@@ -1,0 +1,25 @@
+meta {
+  name: 회원 가입
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "goodmorning@market.com",
+    "password": "11223344",
+    "name": "민철",
+    "type": "user",
+    "profileImage": {
+        "originalname": "IMG_2064.jpg",
+        "name": "pbU0l1WizK.jpg",
+        "path": "/files/00-sample/pbU0l1WizK.jpg"
+      }
+  }
+}

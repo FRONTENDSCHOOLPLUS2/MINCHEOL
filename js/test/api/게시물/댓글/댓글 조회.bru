@@ -1,0 +1,21 @@
+meta {
+  name: 댓글 조회
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/posts/476/replies
+  body: none
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "user": "any"
+  }
+}
